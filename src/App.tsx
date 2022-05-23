@@ -8,18 +8,18 @@ function App() {
     <>
       <Header />
       <main>
-        <ScreenContainer color="green">
+        <ScreenContainer>
           <ScreenTitle>
             <span>Hi, my <br /> name is Allan</span>
           </ScreenTitle>
         </ScreenContainer>
-        <ScreenContainer color="blue">
+        <ScreenContainer>
           <ScreenTitle>
             <span>Some things <br /> I've worked on</span>
           </ScreenTitle>
         </ScreenContainer>
-        <ScreenContainer color="red">Les prjets</ScreenContainer>
-        <ScreenContainer color="pink">
+        <ScreenContainer>Les projets</ScreenContainer>
+        <ScreenContainer>
         <ScreenTitle>
             <span>Contact me</span>
           </ScreenTitle>
