@@ -1,4 +1,6 @@
+import React from "react";
+
 export interface IScreenContainerProps {
-  text: string;
-  color?: "blue" | "red" | "green" | "pink";
+  color: "blue" | "red" | "green" | "pink";
+  children: React.ReactNode;
 }

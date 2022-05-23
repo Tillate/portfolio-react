@@ -1,4 +1,13 @@
 .screenContainer {
-    width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPadding {
+    max-width: 92rem;
+    background-color: lime;
+    height: 50%;
+    flex: 1;
 }

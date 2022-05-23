@@ -1,16 +1,29 @@
 import { styled } from "@stitches/react";
 import Header from "./components/Header/Header";
 import ScreenContainer from "./components/ScreenContainer/ScreenContainer";
+import ScreenTitle from "./components/ScreenTitle/ScreenTitle";
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <ScreenContainer text="container 1" color="green" />
-        <ScreenContainer text="container 2" color="blue" />
-        <ScreenContainer text="container 3" color="red" />
-        <ScreenContainer text="container 4" color="pink" />
+        <ScreenContainer color="green">
+          <ScreenTitle>
+            <span>Hi, my <br /> name is Allan</span>
+          </ScreenTitle>
+        </ScreenContainer>
+        <ScreenContainer color="blue">
+          <ScreenTitle>
+            <span>Some things <br /> I've worked on</span>
+          </ScreenTitle>
+        </ScreenContainer>
+        <ScreenContainer color="red">Les prjets</ScreenContainer>
+        <ScreenContainer color="pink">
+        <ScreenTitle>
+            <span>Contact me</span>
+          </ScreenTitle>
+        </ScreenContainer>
       </main>
     </>
   );
