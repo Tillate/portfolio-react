@@ -1,18 +1,18 @@
 import { Canvas } from "@react-three/fiber";
 import * as React from "react";
+import { Mesh } from "three";
 import Box from "./Box/Box";
 
 interface ISceneProps {}
 
 function Scene(props: ISceneProps) {
   return (
-    <span className="container-canva">
+    <div className="container-canva">
       <Canvas className="canva">
-        <Box position={[-3, 0, 1]} />
-        <Box position={[-0, 0, 1]} scale={[1.2, 1.2, 1.2]} />
-        <Box position={[3, 0, 1]} />
+        <directionalLight />
+        <Box position={[-3, 0, 1]} velocity={0.01} />
       </Canvas>
-    </span>
+    </div>
   );
 }
 
