@@ -1,14 +1,15 @@
-import React, { useRef, useEffect, useState } from "react";
-import { MeshProps, useFrame } from "@react-three/fiber";
+import { useRef, useEffect, useState } from "react";
+import { useFrame } from "@react-three/fiber";
 import { Mesh, MeshBasicMaterial } from "three";
 
-interface IBoxProps extends Mesh {
+interface IBoxProps {
   velocity: number;
+  position: Mesh["position"];
 }
 
 function Box(props: IBoxProps) {
   const ref = useRef<Mesh>(null!);
-  const [clicked, setClicked] = React.useState(false);
+  const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
     console.log(ref.current);

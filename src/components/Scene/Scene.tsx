@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import * as React from "react";
-import { Mesh } from "three";
+import { Vector3 } from "three";
 import Box from "./Box/Box";
 
 interface ISceneProps {}
@@ -10,7 +10,7 @@ function Scene(props: ISceneProps) {
     <div className="container-canva">
       <Canvas className="canva">
         <directionalLight />
-        <Box position={[-3, 0, 1]} velocity={0.01} />
+        <Box velocity={0.01} position={new Vector3(0, 0, 1)}  />
       </Canvas>
     </div>
   );
