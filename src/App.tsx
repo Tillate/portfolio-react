@@ -12,7 +12,7 @@ function App() {
       <main>
         <ScreenContainer>
           <ScreenTitle>
-            <span>
+            <span className="title">
               Hi, my <br /> name is Allan
             </span>
           </ScreenTitle>

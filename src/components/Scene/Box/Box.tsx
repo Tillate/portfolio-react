@@ -25,8 +25,9 @@ function Box(props: IBoxProps) {
         ref.current.position.y = 5;
       }
       if (ref.current.position.y < 0) {
-        ref.current.material = new MeshBasicMaterial({ color: 'red'});
-        ref.current.material = new MeshBasicMaterial({ color: 'blue'});
+        ref.current.material = new MeshBasicMaterial({ color: 'black'});
+      } else {
+        ref.current.material = new MeshBasicMaterial({ color: 'lightblue'});
       }
     }
   });
