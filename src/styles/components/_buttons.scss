@@ -1,0 +1,38 @@
+.buttonMenu {
+    height: 48px;
+    width: 48px;
+    border-radius: 15px;
+    background-color: #FF923E;
+    transition: 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.styledBar {
+   height: 4px;
+   width: 26px;
+   border-radius: 4px;
+   background-color: white; 
+   transition: 0.3s all ease;
+   transform-origin: center;
+ 
+}
+.diagTop {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.isHidden {
+    opacity: 0;
+}
+.diagBot {
+    transform: rotate(-45deg);
+    position: absolute;
+
+}

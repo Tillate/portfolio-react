@@ -1,14 +1,20 @@
+import * as React from "react";
 import { styled } from "@stitches/react";
 import Header from "./components/Header/Header";
+import { MenuDrawer } from "./components/MenuDrawer/MenuDrawer";
 import Scene from "./components/Scene/Scene";
 import ScreenContainer from "./components/ScreenContainer/ScreenContainer";
 import ScreenTitle from "./components/ScreenTitle/ScreenTitle";
+import ContainerPadding from "./components/utils/ContainerPadding";
+import "antd/dist/antd.css";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <>
       <Header />
       <Scene />
+      <MenuDrawer onClose={() => {}} visible={false} />
       <main>
         <ScreenContainer>
           <ScreenTitle>
