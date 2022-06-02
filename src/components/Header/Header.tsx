@@ -1,7 +1,9 @@
 import * as React from "react";
 import { ButtonMenu } from "../Buttons/ButtonMenu";
 
-interface IHeaderProps {}
+interface IHeaderProps {
+  onMenuButtonClicked: () => void;
+}
 
 function Header(props: IHeaderProps) {
   return (
@@ -10,7 +12,7 @@ function Header(props: IHeaderProps) {
       <menu>
         <li>Button 1</li>
         <li>
-          <ButtonMenu />
+          <ButtonMenu onClick={props.onMenuButtonClicked}/>
         </li>
       </menu>
     </header>

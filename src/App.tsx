@@ -10,11 +10,14 @@ import "antd/dist/antd.css";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
   return (
     <>
-      <Header />
+      <Header onMenuButtonClicked={handleMenuClick}/>
       <Scene />
-      <MenuDrawer onClose={() => {}} visible={false} />
+      <MenuDrawer onClose={handleMenuClick} visible={isMenuOpen} />
       <main>
         <ScreenContainer>
           <ScreenTitle>

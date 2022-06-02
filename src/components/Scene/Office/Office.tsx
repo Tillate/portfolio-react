@@ -10,13 +10,19 @@ export function Office(props: IOfficeProps) {
     
 
   React.useEffect(() => {
-      gltf.scene.scale.set(0.9, 0.9, 0.9);
+      gltf.scene.scale.set(0.8, 0.8, 0.8);
       gltf.scene.position.set(3, -1, 0);
-      gltf.scene.rotation.set(.2, -0.9, 0);
+      gltf.scene.rotation.set(0.4, -0.7, 0.04);
+      gltf.scene.receiveShadow = true;
+
+      gltf.scene.children.forEach((node, i) => {
+        gltf.scene.children[i].receiveShadow = true;
+      });
+
   }, []);
 
   useFrame(()=> {
-      gltf.scene.rotation.y += 0.0001;
+      gltf.scene.rotation.y += 0.0000001;
   })
 
   return (
